@@ -1,0 +1,98 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #081c5c;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #9c9798;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gray area with gradient image instead of gray color */
+.gray-area {
+    height: 4in;
+    background: url('Gradient.jpg');
+    background-size: cover; /* Ensure the image covers the space */
+    background-position: center; /* Ensure it's centered */
+    background-repeat: no-repeat;
+}
+
+/* Blue area */
+.blue-area {
+    min-height: 100vh;
+    background-color: #081c5c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-wrapper {
+    text-align: center;
+}
+
+.profile-wrapper img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-top: -1.5in;
+    border-radius: 10%;
+    border: 5px solid #043657;
+}
+
+.profile-text {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px; /* Space between image and text */
+    font-family: 'Jersey 15', serif; /* Applying Jersey 15 font */
+}
+.new-section {
+    background-color: #0a1a29;
+    width: 80%; /* Adjust width to 80% of the parent container */
+    height: auto; /* Let the height adjust automatically */
+    padding: 20px; /* Padding inside the section */
+    margin: 20px auto; /* Center the section horizontally and add space above/below */
+    border-radius: 10%; /* Rounded corners */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rectangle {
+    background-color: rgba(0, 56, 83, 0.3); /* Semi-transparent background */
+    height: 350px;
+    width: 300px;
+    flex-shrink: 0;  /* Prevent shrinking */
+    margin-bottom: 20px;  /* Ensures space between rows */
+    position: relative; /* Enable absolute positioning for the image */
+    border-radius: 10%;
+    text-align: center;  /* Center text under the image */
+}
+
+.rectangle img {
+    position: absolute;  /* Position relative to the rectangle */
+    top: 160px;  /* Space from the top of the rectangle */
+    left: 50%;  /* Align horizontally to the center */
+    transform: translateX(-50%);  /* Center the image horizontally */
+    width: 250px;  /* Set image width */
+    height: 250px;  /* Set image height */
+    object-fit: cover;  /* Ensure the image covers the area without distorting */
+}
+.rectangle-text {
+    font-family: 'Jersey 15', sans-serif; /* Use the same font as "YOUR NAME" */
+    font-size: 36px; /* Adjust the font size as needed */
+    color: white;  /* Text color */
+    margin-top: 290px;  /* Space between the image and the text */
+}
